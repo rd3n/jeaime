@@ -1,0 +1,27 @@
+{
+  "name": "JE AIME",
+  "short_name": "JE AIME",
+  "default_locale": "en",
+  "description": "JE AIME",
+  "version": "0.1",
+  "manifest_version": 2,
+  "icons": {
+    "48": "img/heart-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://github.com/*"
+      ],
+      "js": [
+        "module/content-script/drive.bundle.js"
+      ]
+    }
+  ],
+  "page_action": {
+    "default_icon": {
+      "36": "img/heart-36.png"
+    },
+    "default_title": "JE AIME !!!"
+  }
+}
